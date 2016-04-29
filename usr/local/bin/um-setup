@@ -17,7 +17,7 @@ fi
 echo "Installing GCOM from revision $vn"
 
 if [[ -n "$2" ]]; then
-  source=$2
+  src=$2
 fi
 echo "Installing GCOM from source $src"
 
