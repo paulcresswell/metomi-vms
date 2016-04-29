@@ -2,7 +2,7 @@
 
 # Set up additional files for the UM:
 # 1) Check out, build and install GCOM
-# 2) Create keyword.cfg file for offline working
+# 2) Create keyword.cfg file with fake mirror keywords.
 
 if [ "$#" -gt 2 ]; then
   echo "Usage: $(basename $0) [revision] [source]" 
