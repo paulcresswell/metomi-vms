@@ -72,7 +72,7 @@ mkdir -p /home/vagrant/.metomi/fcm
 echo "location{primary}[um.xm] = https://code.metoffice.gov.uk/svn/um/main
 location{primary}[jules.xm] = https://code.metoffice.gov.uk/svn/jules/main
 location{primary}[socrates.xm] = https://code.metoffice.gov.uk/svn/socrates/main
-location{primary}[um_aux.xm] = https://code.metoffice.gov.uk/svn/um/AUX
+location{primary}[um_aux.xm] = https://code.metoffice.gov.uk/svn/um/aux
 location{primary}[um_doc.xm] = https://code.metoffice.gov.uk/svn/um/doc" > /home/vagrant/.metomi/fcm/keyword.cfg
 
 echo
