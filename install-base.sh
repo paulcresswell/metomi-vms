@@ -222,3 +222,4 @@ dos2unix -n /vagrant/usr/local/bin/install-jules-gswp2-data /usr/local/bin/insta
 dos2unix -n /vagrant/usr/local/bin/install-gcom-extras /usr/local/bin/install-gcom-extras
 dos2unix -n /vagrant/usr/local/bin/install-um-extras /usr/local/bin/install-um-extras
 dos2unix -n /vagrant/usr/local/bin/um-setup /usr/local/bin/um-setup
+dos2unix -n /vagrant/usr/local/bin/install-um-data /usr/local/bin/install-um-data
