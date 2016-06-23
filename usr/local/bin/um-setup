@@ -83,11 +83,13 @@ location{primary}[jules.xm] = https://code.metoffice.gov.uk/svn/jules/main
 location{primary}[socrates.xm] = https://code.metoffice.gov.uk/svn/socrates/main
 location{primary}[um_aux.xm] = https://code.metoffice.gov.uk/svn/um/aux
 location{primary}[um_doc.xm] = https://code.metoffice.gov.uk/svn/um/doc
+location{primary}[mule.xm] = https://code.metoffice.gov.uk/svn/um/mule
 
 location{prinary}[um.offline] = file://$HOME/source/um/offline
 location{prinary}[jules.offline] = file://$HOME/source/jules/offline
 location{prinary}[socrates.offline] = file://$HOME/source/socrates/offline
-location{prinary}[um_aux.offline] = file://$HOME/source/um_aux/offline" > $HOME/.metomi/fcm/keyword.cfg
+location{prinary}[um_aux.offline] = file://$HOME/source/um_aux/offline
+location{prinary}[mule.offline] = file://$HOME/source/mule/offline" > $HOME/.metomi/fcm/keyword.cfg
 
 echo "Local FCM keywords created."
 echo

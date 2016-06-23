@@ -21,9 +21,15 @@ cd $tmpdir
 tarfile=vm_input_data
 
 echo "Extracting input data archive from the MOSRS"
-fcm extract -q https://code.metoffice.gov.uk/svn/doc/um/resources/vm_inputs/${tarfile}.tgz@$rev || exit 1
+fcm export -q https://code.metoffice.gov.uk/svn/doc/um/resources/vm_inputs/${tarfile}.tgz@$rev || exit 1
 
 tar -xzf ${tarfile}.tgz
+
+# If a central install (using rose-stem) has been attempted before the ancils
+# have been set up, this could have left a dead symlink which needs removing:
+if [[ -h "$HOME/umdir/ancil" ]]; then
+  rm -f $HOME/umdir/ancil
+fi
 
 mkdir -p $HOME/umdir
 cp -r $tarfile/* $HOME/umdir
@@ -31,5 +37,6 @@ cp -r $tarfile/* $HOME/umdir
 # Clean up
 rm -rf $tmpdir
 
+echo
 echo "UM Inputs have been installed to $HOME/umdir/ancil"
 echo "and $HOME/umdir/standard_jobs"
